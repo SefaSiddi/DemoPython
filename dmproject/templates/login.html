@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+<form action="login" method="POST">
+      {%csrf_token %}
+      <input type ="text" name="username" Placeholder="enter your username"><br>
+      <input type="password" name="password" Placeholder="enter your password"><br>
+      <input type="submit">
+</form>
+</body>
+
+</html>
